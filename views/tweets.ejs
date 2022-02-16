@@ -1,0 +1,17 @@
+<html lang="en">
+   <body>
+       <h1>Users</h1>
+       <% tweets.forEach( tweet => {%>
+         <div>
+             <h2><%= tweet._id %></h2>
+             <h2><%= tweet.title %></h2>
+             <p><%= tweet.body %></p>
+             <p><%= tweet.tags %></p>
+         </div>
+      <% }) %>
+
+      <%- include("./components/footer.ejs") %>
+
+      <!-- <form action="/users" method="post"></form> -->
+   </body>
+</html>
