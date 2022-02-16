@@ -1,9 +1,9 @@
 const express=require('express');
 const app = express();
 const cors= require('cors');
-const connect= require('./config/db');
-const userRouter= require('./routes/user.routes');
-const twitterRouter= require('./routes/twitter.route');
+const connect= require('./app/config/db');
+const userRouter= require('./app/routes/user.routes');
+const twitterRouter= require('./app/routes/twitter.route');
 
 const PORT = 5001;
 app.set("view engine", "ejs")

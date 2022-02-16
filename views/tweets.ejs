@@ -1,12 +1,12 @@
 <html lang="en">
    <body>
-       <h1>Users</h1>
+       <h1 style="border: 1px solid black; text-align: center;width: 30%;margin:auto; padding:20px">Tweets</h1>
        <% tweets.forEach( tweet => {%>
-         <div>
-             <h2><%= tweet._id %></h2>
-             <h2><%= tweet.title %></h2>
-             <p><%= tweet.body %></p>
-             <p><%= tweet.tags %></p>
+         <div style="border: 1px solid black; text-align: center;width: 30%;margin:auto; padding:20px">
+             <h2> ID : <%= tweet._id %></h2>
+             <h2> Title : <%= tweet.title %></h2>
+             <p> Content :  <%= tweet.body %></p>
+             <p> Tags : <%= tweet.tags %></p>
          </div>
       <% }) %>
 
