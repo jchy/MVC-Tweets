@@ -1,9 +1,11 @@
 <html lang="en">
     <body>
+       <div style="border: 1px solid black; text-align: center;width: 30%;margin:auto; padding:20px">
         <h1>User</h1>
           <h2>User ID: <%= user._id %></h2>
           <h2> Username : <%= user.username %></h2>
           <p> Email : <%= user.email %></p>
        <%- include("./components/footer.ejs") %>
+      </div>
     </body>
  </html>
